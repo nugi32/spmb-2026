@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Hibike! Euphonium — Fan Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">Hibike!<span> Euphonium</span></a>
+      <nav class="nav" id="nav">
+        <a href="#episodes">Episode</a>
+        <a href="#characters">Karakter</a>
+        <a href="#about">Tentang</a>
+      </nav>
+      <div class="actions">
+        <input id="search" class="search" placeholder="Cari judul..." aria-label="cari" />
+        <button id="menuBtn" class="menu-btn">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <h1>Selamat Datang di Hibike! Euphonium — Fan Hub</h1>
+      <p>
+        Pusat penggemar yang didedikasikan untuk <strong>Hibike! Euphonium</strong>,
+        menghadirkan rangkuman season, karakter, dan perjalanan klub band konser
+        SMA Kitauji dalam mengejar panggung nasional.
+      </p>
+      <p>
+        Dibangun sebagai tribute visual dan eksplorasi UI,
+        proyek ini berfokus pada penyajian tema anime melalui HTML, CSS, dan JavaScript,
+        tanpa backend maupun aset resmi.
+      </p>
+      <p class="hero-focus">Fokus: Hibike! Euphonium — Fan Hub</p>
+      <a href="#episodes" class="btn">Jelajahi Konten Hibike Eufonium</a>
+    </div> 
+  </div>
+</section>
+
+
+    <section id="episodes" class="section">
+  <div class="container">
+    <h2 class="section-title">Season Terbaru</h2>
+    <div class="grid cards" id="episodesGrid">
+      
+      <article class="card" data-title="Season 1">
+        <img src="public/s1.jpg" alt="season 1">
+        <div class="card-body">
+          <h3>Season 1</h3>
+          <p>Awal perjalanan band konser sekolah, penuh adaptasi dan pencarian jati diri.</p>
+        </div>
+      </article>
+
+      <article class="card" data-title="Season 2">
+        <img src="public/s2.jpeg" alt="season 2">
+        <div class="card-body">
+          <h3>Season 2</h3>
+          <p>Konflik internal dan peningkatan kemampuan musikal menuju kompetisi besar.</p>
+        </div>
+      </article>
+
+      <article class="card" data-title="Season 3">
+        <img src="public/s3.jpeg" alt="season 3">
+        <div class="card-body">
+          <h3>Season 3</h3>
+          <p>Puncak perjalanan band, keputusan penting, dan target nasional.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+    <section id="characters" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Karakter Populer</h2>
+        <div class="grid chars" id="charsGrid">
+          <div class="char" tabindex="0">
+            <img src="public/kumiko.jpeg" alt="kumiko">
+            <h4>Kumiko Oumae</h4>
+            <p>Fokus pada eufonium dan narasi utama.</p>
+          </div>
+          <div class="char" tabindex="0">
+            <img src="public/reina.jpeg" alt="reina">
+            <h4>Reina Kousaka</h4>
+            <p>Solisme trumpet yang penuh emosi.</p>
+          </div>
+          <div class="char" tabindex="0">
+            <img src="public/hazuki.jpg" alt="hazuki">
+            <h4>Hazuki Katou</h4>
+            <p>Karakter pendukung penuh semangat.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+  <div class="container">
+    <h2 class="section-title">Tentang</h2>
+    <p>
+      <strong>Hibike! Euphonium</strong> adalah anime drama musik yang mengisahkan
+      perjalanan klub band konser SMA Kitauji dalam mengejar prestasi di tingkat nasional.
+      Cerita menyoroti proses latihan, kerja sama tim, serta dinamika hubungan antar anggota
+      yang berkembang seiring waktu.
+    </p>
+    <p>
+      Anime ini menampilkan pertumbuhan karakter secara realistis,
+      mulai dari keraguan diri, konflik internal, hingga komitmen terhadap tujuan bersama.
+      Musik bukan hanya menjadi latar, tetapi inti dari cerita yang mendorong emosi dan perkembangan setiap tokohnya.
+    </p>
+    <p>
+      Dengan animasi yang detail dan penyajian musik yang kuat,
+      Hibike! Euphonium menghadirkan kisah tentang usaha, ketekunan,
+      dan arti bekerja keras dalam sebuah tim.
+    </p>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 Hibike! Euphonium — Fan Hub</p>
+      <small>Made with ❤️</small>
+    </div>
+  </footer>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button id="closeLb" class="lb-close">✕</button>
+    <img id="lbImg" src="" alt="preview">
+  </div>
+
+  <script src="src/main.js"></script>
+</body>
+</html>
