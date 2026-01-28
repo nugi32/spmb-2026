@@ -355,14 +355,55 @@ a {
 /* =========================
    Responsive
 ========================= */
+@media (max-width: 480px) {
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem 1.2rem;
+  }
+
+  .nav a {
+    font-size: 0.85rem;
+  }
+}
+
+
 @media (max-width: 768px) {
-  .hero-text h1 {
-    font-size: 2.1rem;
+  .header-inner {
+    height: auto;
+    padding: 0.8rem 0;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .logo {
+    font-size: 1.1rem;
+  }
+
+  .nav {
+    gap: 1rem;
+  }
+
+  .nav a {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 480px) {
-  .card img {
-    height: 150px;
+  .hero .btn {
+    font-size: 0.78rem;
+    padding: 0.5rem 1rem;
+    line-height: 1.2;
+    text-align: center;
+    white-space: normal; /* allow wrap */
+    max-width: 260px;
   }
 }
+
