@@ -113,7 +113,7 @@ body {
 }
 
 .hero {
-  background-image: url('assets/character.jpg'), url('assets/main-char.jpeg');
+  background-image: url('../public/character.jpg'), url('../public/character.jpg');
   background-size: cover, cover;
   background-position: center 28%, center 28%;
   background-repeat: no-repeat, no-repeat;
